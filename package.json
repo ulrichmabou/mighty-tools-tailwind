@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.7",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
     "tailwindcss": "^4.0.7"
   }
 }
