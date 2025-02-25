@@ -9,6 +9,10 @@
   <body
     class="font-mono antialiased text-sm leading-[1.5] text-text-primary bg-bg-main dark:bg-bg-dark tracking-[-0.011em] flex justtify-center items-center min-h-screen"
   >
+  <button id="toggleDark" class="fixed top-[20px] right-[20px] hover:cursor-pointer" onclick="document.body.classList.toggle('dark')">
+    <img src="./img/dark-ligth.png" alt="Dark and light mode theme switcher">
+  </button>
+</div>
     <div
       class="relative z-1 w-1/2 max-w-[960px] my-0 mx-auto transition-opacity"
     >
@@ -222,7 +226,7 @@
             class="mt-12 pt-6 text-[13px] text-text-secondary border-t border-border-color"
           >
             <p class="dark:text-bg-subtle">
-              <span class="font-medium text-signature-color">Credit:</span>
+              <span class="font-medium text-signature-color underline underline-offset-[3px] decoration-1">Credit:</span>
               Reproduced with HTML and Tailwind CSS from
               <a
                 class="underline underline-offset-[3px] decoration-1"
@@ -236,4 +240,21 @@
       </footer>
     </div>
   </body>
+
+  <!-- To toggle dark/light theme -->
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleDark = document.getElementById('toggleDark')
+      toggleDark.addEventListener('click', function() {
+        if(document.documentElement.classList.includes('dark')) {
+          document.documentElement.classList.remove('dark')
+        }
+        else {
+          document.documentElement.classList.add('dark')
+        }
+        alert("click!")
+      });
+    });
+  </script>
+
 </html>

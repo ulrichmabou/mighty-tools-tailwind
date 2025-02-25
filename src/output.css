@@ -530,8 +530,17 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
+  }
+  .top-\[20px\] {
+    top: 20px;
+  }
+  .right-\[20px\] {
+    right: 20px;
   }
   .z-1 {
     z-index: 1;
@@ -556,6 +565,9 @@
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
   }
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
@@ -591,17 +603,59 @@
     width: 24px;
     height: 24px;
   }
+  .h-0\.5 {
+    height: calc(var(--spacing) * 0.5);
+  }
+  .h-1 {
+    height: calc(var(--spacing) * 1);
+  }
+  .h-2 {
+    height: calc(var(--spacing) * 2);
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-5 {
+    height: calc(var(--spacing) * 5);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
   .h-\[36px\] {
     height: 36px;
   }
   .h-auto {
     height: auto;
   }
+  .h-full {
+    height: 100%;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-0\.5 {
+    width: calc(var(--spacing) * 0.5);
+  }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
+  }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
+  .w-2xl {
+    width: var(--container-2xl);
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-\[36px\] {
     width: 36px;
@@ -645,6 +699,9 @@
   .rounded-\[3px\] {
     border-radius: 3px;
   }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
@@ -666,6 +723,9 @@
   .bg-bg-main {
     background-color: var(--color-bg-main);
   }
+  .bg-blue-100 {
+    background-color: var(--color-blue-100);
+  }
   .bg-highlight-text {
     background-color: var(--color-highlight-text);
   }
@@ -681,6 +741,9 @@
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
   }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -689,6 +752,9 @@
   }
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
@@ -753,8 +819,8 @@
   .whitespace-nowrap {
     white-space: nowrap;
   }
-  .text-bg-main {
-    color: var(--color-bg-main);
+  .text-blue-900 {
+    color: var(--color-blue-900);
   }
   .text-signature-color {
     color: var(--color-signature-color);
@@ -799,28 +865,25 @@
   .will-change-auto {
     will-change: auto;
   }
+  .hover\:cursor-pointer {
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
+  }
   .dark\:bg-bg-dark {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       background-color: var(--color-bg-dark);
     }
   }
-  .dark\:bg-bg-subtle {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-bg-subtle);
-    }
-  }
-  .dark\:text-bg-dark {
-    @media (prefers-color-scheme: dark) {
-      color: var(--color-bg-dark);
-    }
-  }
   .dark\:text-bg-main {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       color: var(--color-bg-main);
     }
   }
   .dark\:text-bg-subtle {
-    @media (prefers-color-scheme: dark) {
+    &:where(.dark, .dark *) {
       color: var(--color-bg-subtle);
     }
   }
