@@ -9,6 +9,10 @@
   <body
     class="font-mono antialiased text-sm leading-[1.5] text-text-primary bg-bg-main dark:bg-bg-dark tracking-[-0.011em] flex justtify-center items-center min-h-screen"
   >
+  <button onclick="playSound()" class="fixed top-[20px] left-[20px] hover:cursor-pointer">
+    <img src="./img/sound.png" alt="Sound button">
+  </button>
+  <audio id="sound" src="./img/ui-button-press.wav"></audio>
   <button id="toggleDark" class="fixed top-[20px] right-[20px] hover:cursor-pointer" onclick="document.body.classList.toggle('dark')">
     <img src="./img/dark-ligth.png" alt="Dark and light mode theme switcher">
   </button>
@@ -241,7 +245,7 @@
     </div>
   </body>
 
-  <!-- To toggle dark/light theme -->
+  <!-- To toggle dark/light theme & play small sound-->
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
       const toggleDark = document.getElementById('toggleDark')
@@ -255,6 +259,10 @@
         alert("click!")
       });
     });
+
+    function playSound() {
+      document.getElementById("sound").play();
+    }
   </script>
 
 </html>
