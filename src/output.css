@@ -545,12 +545,6 @@
   .bottom-\[20px\] {
     bottom: 20px;
   }
-  .left-\[20px\] {
-    left: 20px;
-  }
-  .z-1 {
-    z-index: 1;
-  }
   .mx-0 {
     margin-inline: calc(var(--spacing) * 0);
   }
@@ -615,14 +609,8 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
-  }
   .w-\[36px\] {
     width: 36px;
-  }
-  .w-\[280px\] {
-    width: 280px;
   }
   .w-\[430px\] {
     width: 430px;
@@ -638,9 +626,6 @@
   }
   .max-w-\[640px\] {
     max-width: 640px;
-  }
-  .max-w-\[960px\] {
-    max-width: 960px;
   }
   .min-w-\[200px\] {
     min-width: 200px;
@@ -716,9 +701,6 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
-  }
-  .py-\[72px\] {
-    padding-block: 72px;
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
@@ -858,16 +840,6 @@
       @media (hover: hover) {
         cursor: pointer;
       }
-    }
-  }
-  .sm\:w-\[400px\] {
-    @media (width >= 40rem) {
-      width: 400px;
-    }
-  }
-  .sm\:w-\[450px\] {
-    @media (width >= 40rem) {
-      width: 450px;
     }
   }
   .sm\:w-\[460px\] {
