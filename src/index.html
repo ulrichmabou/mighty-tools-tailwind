@@ -9,27 +9,38 @@
   <body
     class="font-mono antialiased text-sm leading-[1.5] text-text-primary bg-bg-main dark:bg-bg-dark tracking-[-0.011em] flex justtify-center items-center min-h-screen"
   >
-  <button onclick="playSound()" class="fixed top-[20px] left-[20px] hover:cursor-pointer transition-transform duration-200 hover:scale-110">
-    <img src="./img/sound.png" alt="Sound button">
-  </button>
-  <audio id="sound" src="./img/ui-button-press.wav"></audio>
-  <button id="toggleDark" class="fixed top-[20px] right-[20px] hover:cursor-pointer transition-transform duration-200 hover:translate-y-1"
-    onclick="document.body.classList.toggle('dark')"
-  >
-    <img src="./img/dark-ligth.png" alt="Dark and light mode theme switcher">
-  </button>
-</div>
-    <div
-      class="relative z-1 w-1/2 max-w-[960px] my-0 mx-auto transition-opacity"
+    <!-- <button
+      id="toggleDark"
+      class="fixed top-[20px] right-[20px] hover:cursor-pointer transition-transform duration-200 hover:translate-y-1"
+      onclick="document.body.classList.toggle('dark')"
     >
-      <header class="w-[280px] sm:w-[400px] md:w-[500px] max-w-[640px] my-0 mx-auto py-[72px]">
-        <div class="max-w-[640px] my-0 mx-auto py-0 px-0">
+      <img
+        src="./img/dark-ligth.png"
+        alt="Dark and light mode theme switcher"
+      />
+    </button> -->
+    <!-- <button
+      onclick="playSound()"
+      class="fixed bottom-[20px] right-[20px] hover:cursor-pointer transition-transform duration-200 hover:scale-110"
+    >
+      <img src="./img/sound.png" alt="Sound button" />
+    </button> -->
+    <!-- <audio id="sound" src="./img/ui-button-press.wav"></audio> -->
+    <div
+      class="relative z=1 w-full my-0 mx-0 transition-opacity"
+    >
+      <header
+        class="w-[430px] sm:w-[460px] md:w-[500px] max-w-[640px] pt-[56px] pb-[40px] px-0 my-0 mx-auto"
+      >
+        <div class="max-w-[640px] my-0 mx-auto py-0 px-6">
           <img
             class="w-[36px] h-[36px] mb-6 rounded-b-sm cursor-pointer hover-rotate-360"
             src="./img/mighty-tools-logo.svg"
             alt="Mighty Tools Logo"
           />
-          <h1 class="text-[28px] dark:text-bg-main font-medium mb-4 leading-[1.3]">
+          <h1
+            class="text-[28px] dark:text-bg-main font-medium mb-4 leading-[1.3]"
+          >
             <span class="tracking-[-0.02em] inline-block min-w-[200px]"
               >Mighty Tools</span
             >
@@ -38,7 +49,9 @@
               >@_umabou</span
             >
           </h1>
-          <p class="text-text-secondary dark:text-bg-subtle text-sm max-w-[480px] mb-2">
+          <p
+            class="text-text-secondary dark:text-bg-subtle text-sm max-w-[480px] mb-2"
+          >
             Building products across all scales -
             <span
               class="bg-highlight-text rounded-[3px] py-0.5 px-1 my-0 mx-[-4px]"
@@ -54,9 +67,13 @@
           </p>
         </div>
       </header>
-      <main class="w-[280px] sm:w-[400px] md:w-[500px] max-w-[640px] my-0 mx-auto">
+      <main
+      class="w-[430px] sm:w-[460px] md:w-[500px] max-w-[640px] px-6 my-0 mx-auto"
+      >
         <section class="py-12 px-0">
-          <h2 class="text-base dark:text-bg-main mb-6 font-medium tracking-[-0.02em]">
+          <h2
+            class="text-base dark:text-bg-main mb-6 font-medium tracking-[-0.02em]"
+          >
             Featured Products
           </h2>
           <div class="grid gap-4">
@@ -68,7 +85,9 @@
                 alt="Totals App logo"
                 class="size-[24px] block mb-[14px]"
               />
-              <h3 class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1">
+              <h3
+                class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1"
+              >
                 <a href="https://totalsapp.com">Total App</a>
               </h3>
               <p class="text-[13px] text-text-secondary dark:text-bg-subtle">
@@ -84,7 +103,9 @@
                 alt="Design Buddy logo"
                 class="size-[24px] block mb-[14px]"
               />
-              <h3 class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1">
+              <h3
+                class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1"
+              >
                 <a href="https://designbuddy.net">Design Buddy</a>
               </h3>
               <p class="text-[13px] text-text-secondary dark:text-bg-subtle">
@@ -100,7 +121,9 @@
                 alt="UI Faces logo"
                 class="size-[24px] block mb-[14px]"
               />
-              <h3 class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1">
+              <h3
+                class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1"
+              >
                 <a href="https://uifaces.co">UI Faces</a>
               </h3>
               <p class="text-[13px] text-text-secondary dark:text-bg-subtle">
@@ -112,7 +135,9 @@
           </div>
         </section>
         <section class="py-12 px-0 border-t border-border-color">
-          <h2 class="text-base dark:text-bg-main mb-6 font-medium tracking-[-0.02em]">
+          <h2
+            class="text-base dark:text-bg-main mb-6 font-medium tracking-[-0.02em]"
+          >
             Companies I Work With
           </h2>
           <div class="grid gap-4">
@@ -124,10 +149,14 @@
                 alt="Adobe logo"
                 class="size-[24px] block mb-[14px]"
               />
-              <h3 class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1">
+              <h3
+                class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1"
+              >
                 <a href="https://www.adobe.com">Adobe Inc.</a>
               </h3>
-              <p class="text-[13px] text-text-secondary dark:text-bg-subtle">Plugin development partner.</p>
+              <p class="text-[13px] text-text-secondary dark:text-bg-subtle">
+                Plugin development partner.
+              </p>
             </article>
             <article
               class="p-4 border border-border-color rounded-sm transition-colors will-change-auto bg-transparent"
@@ -137,10 +166,14 @@
                 alt="Grammarly logo"
                 class="size-[24px] block mb-[14px]"
               />
-              <h3 class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1">
+              <h3
+                class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1"
+              >
                 <a href="https://www.grammarly.com">Grammarly Inc.</a>
               </h3>
-              <p class="text-[13px] text-text-secondary dark:text-bg-subtle">Product development consultant.</p>
+              <p class="text-[13px] text-text-secondary dark:text-bg-subtle">
+                Product development consultant.
+              </p>
             </article>
             <article
               class="p-4 border border-border-color rounded-sm transition-colors will-change-auto bg-transparent"
@@ -150,7 +183,9 @@
                 alt="Your company"
                 class="size-[24px] block mb-[14px]"
               />
-              <h3 class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1">
+              <h3
+                class="text-[14px] dark:text-bg-subtle mb-2 font-medium underline underline-offset-[3px] decoration-1"
+              >
                 <a
                   href="mailto:ulrichmabou@gmail.com?subject=Hello&body=Hello Ulrich,"
                   >Let's work together</a
@@ -165,32 +200,56 @@
           </div>
         </section>
         <section class="py-12 px-0 border-t border-border-color">
-          <h2 class="text-base dark:text-bg-main mb-6 font-medium tracking-[-0.02em]">
+          <h2
+            class="text-base dark:text-bg-main mb-6 font-medium tracking-[-0.02em]"
+          >
             About Me
           </h2>
-          <p class="text-text-secondary text-[14px] mb-4 max-w-[580px] dark:text-bg-subtle">
+          <p
+            class="text-text-secondary text-[14px] mb-4 max-w-[580px] dark:text-bg-subtle"
+          >
             Over the past two decades, I've helped tech companies and startups
             build better products, focusing on workflow and productivity tools.
           </p>
-          <p class="text-text-secondary text-[14px] mb-4 max-w-[580px] dark:text-bg-subtle">
+          <p
+            class="text-text-secondary text-[14px] mb-4 max-w-[580px] dark:text-bg-subtle"
+          >
             I work across the full product spectrum - from conceptualization to
             UX design to development. I build scalable products from scratch,
             improve existing ones, and guide projects from concept to launch.
           </p>
           <div class="grid grid-cols-2 gap-4 my-6 mx-0">
-            <img class="block w-full h-auto rounded-1 border border-border-color transition-all" src="./img/mightyalex-computer.jpg" alt="Aleksandar Tasevski sitting at a computer">
-            <img class="block w-full h-auto rounded-1 border border-border-color transition-all" src="./img/mightyalex-outside.jpg" alt="Aleksandar Tasevski outdoor portrait">
+            <img
+              class="block w-full h-auto rounded-1 border border-border-color transition-all"
+              src="./img/mightyalex-computer.jpg"
+              alt="Aleksandar Tasevski sitting at a computer"
+            />
+            <img
+              class="block w-full h-auto rounded-1 border border-border-color transition-all"
+              src="./img/mightyalex-outside.jpg"
+              alt="Aleksandar Tasevski outdoor portrait"
+            />
           </div>
-          <p class="text-text-secondary text-[14px] mb-4 max-w-[580px] dark:text-bg-subtle">
+          <p
+            class="text-text-secondary text-[14px] mb-4 max-w-[580px] dark:text-bg-subtle"
+          >
             My clients appreciate getting clean, user-friendly solutions without
             unnecessary complexity or overhead. Have a project in mind? Let's
             talk about it.
           </p>
-          <p class="text-text-secondary text-[14px] mb-4 mt-6 font-medium max-w-[580px] dark:text-bg-subtle">Ulrich Mabou</p>
-          <p class="text-signature-color text-[14px] mb-0 mt-6 max-w-[580px]">UM</p>
+          <p
+            class="text-text-secondary text-[14px] mb-4 mt-6 font-medium max-w-[580px] dark:text-bg-subtle"
+          >
+            Ulrich Mabou
+          </p>
+          <p class="text-signature-color text-[14px] mb-0 mt-6 max-w-[580px]">
+            UM
+          </p>
         </section>
       </main>
-      <footer class="w-[280px] sm:w-[400px] md:w-[500px] max-w-[640px] mx-auto py-8 mt-10 border-t border-border-color">
+      <footer
+        class="w-[430px] sm:w-[460px] md:w-[500px] max-w-[640px] mx-auto py-8 px-6 mt-10 border-t border-border-color"
+      >
         <div class="max-w-[640px] my-0 mx-auto py-0 px-0">
           <div class="flex gap-4 justify-start whitespace-nowrap">
             <a
@@ -232,7 +291,10 @@
             class="mt-10 pt-8 text-[13px] text-text-secondary border-t border-border-color"
           >
             <p class="dark:text-bg-subtle">
-              <span class="font-medium text-signature-color underline underline-offset-[3px] decoration-1">Credit:</span>
+              <span
+                class="font-medium text-signature-color underline underline-offset-[3px] decoration-1"
+                >Credit:</span
+              >
               Reproduced with HTML and Tailwind CSS from
               <a
                 class="underline underline-offset-[3px] decoration-1"
@@ -250,15 +312,14 @@
   <!-- To toggle dark/light theme & play small sound-->
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
-      const toggleDark = document.getElementById('toggleDark')
-      toggleDark.addEventListener('click', function() {
-        if(document.documentElement.classList.includes('dark')) {
-          document.documentElement.classList.remove('dark')
+      const toggleDark = document.getElementById("toggleDark");
+      toggleDark.addEventListener("click", function () {
+        if (document.documentElement.classList.includes("dark")) {
+          document.documentElement.classList.remove("dark");
+        } else {
+          document.documentElement.classList.add("dark");
         }
-        else {
-          document.documentElement.classList.add('dark')
-        }
-        alert("click!")
+        alert("click!");
       });
     });
 
@@ -266,5 +327,4 @@
       document.getElementById("sound").play();
     }
   </script>
-
 </html>
