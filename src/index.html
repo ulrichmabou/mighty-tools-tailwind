@@ -9,23 +9,22 @@
   <body
     class="font-mono antialiased text-sm leading-[1.5] text-text-primary bg-bg-main dark:bg-bg-dark tracking-[-0.011em] flex justtify-center items-center min-h-screen"
   >
-    <!-- <button
+    <button
       id="toggleDark"
-      class="fixed top-[20px] right-[20px] hover:cursor-pointer transition-transform duration-200 hover:translate-y-1"
-      onclick="document.body.classList.toggle('dark')"
+      class="fixed top-[20px] right-[20px] hover:cursor-pointer transition-transform duration-200 hover:translate-y-1 z-1"
     >
       <img
         src="./img/dark-ligth.png"
         alt="Dark and light mode theme switcher"
       />
-    </button> -->
-    <!-- <button
+    </button>
+    <button
       onclick="playSound()"
-      class="fixed bottom-[20px] right-[20px] hover:cursor-pointer transition-transform duration-200 hover:scale-110"
+      class="fixed bottom-[20px] right-[20px] hover:cursor-pointer transition-transform duration-200 hover:scale-125 z-1"
     >
       <img src="./img/sound.png" alt="Sound button" />
-    </button> -->
-    <!-- <audio id="sound" src="./img/ui-button-press.wav"></audio> -->
+    </button>
+    <audio id="sound" src="./img/ui-button-press.wav"></audio>
     <div class="relative z=1 w-full my-0 mx-0 transition-opacity">
       <header
         class="w-[430px] sm:w-[460px] md:w-[500px] max-w-[640px] pt-[56px] pb-[40px] px-0 my-0 mx-auto"
@@ -312,12 +311,11 @@
     document.addEventListener("DOMContentLoaded", () => {
       const toggleDark = document.getElementById("toggleDark");
       toggleDark.addEventListener("click", function () {
-        if (document.documentElement.classList.includes("dark")) {
-          document.documentElement.classList.remove("dark");
+        if (document.body.classList.contains("dark")) {
+          document.body.classList.remove("dark");
         } else {
-          document.documentElement.classList.add("dark");
+          document.body.classList.add("dark");
         }
-        alert("click!");
       });
     });
 
